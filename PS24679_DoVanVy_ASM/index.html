@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="slideshow.js"></script>
+    <script src="giohang.js"></script>
+    <title>index</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/index.html"><img src="hinh/FPT_Polytechnic.png" alt=""></a>
+            </div>
+            <div class="slideshow-button">
+                <div class="slideimg">
+                    <div class="hinhanh">
+                        <img class="hinh" id="hinh" src="hinh/xxxbanner1.webp" alt="">
+                    </div>
+                    <div class="nuttrai">
+                        <button type="button" onclick="back()">
+                            < </button>
+                    </div>
+                    <div class="nutphai">
+                        <button type="button" onclick="next()">></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <!-- <div class="hung"><p class="hung2"> hưng đẹp trai</p></div> -->
+    <nav>
+        <div class="menu">
+            <ul>
+                <li><a href="#">trang chủ</a></li>
+                <li><a href="#">liên hệ</a></li>
+                <li>
+                    <div class="login" id="mycar" onclick="showhide()">
+                        <a href="#">giỏ hàng</a>
+                    </div>
+                </li>
+                <li><a href="dangnhap.html" target="_blank" rel="noopener noreferrer">đăng nhập</a></li>
+                <li><a href="dangki.html" target="_blank" rel="noopener noreferrer">đăng kí</a></li>
+                <li>
+                    <a href="#">khác</a>
+                    <ul class="dropmenu">
+                        <li><a href="#">chuột</a></li>
+                        <li><a href="#">bàn phím</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+
+
+    </nav>
+    <!-- <div class="cach"></div>
+    <div class="noidunglap">
+        <div class="tieude">
+            <h3>laptop</h3>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/lap1.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/lap2.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/lap3.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/lap4.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/lap5.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/lap6.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/lap7.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/lap8.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/lap9.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="cach"></div>
+
+    <div class="noidungcard">
+        <div class="tieude">
+            <h3>card đồ họa</h3>
+        </div>
+        <div class="ndspcard">
+            <div class="spcard">
+                <div class="tenspcard">SP1</div>
+                <img src="hinh/hinh1.jpg" alt="">
+                <div class="giacard">
+                    <del>$150</del>$100
+                </div>
+                <button class="muacard">mua</button>
+            </div>
+        </div>
+        <div class="ndspcard">
+            <div class="spcard">
+                <div class="tenspcard">SP1</div>
+                <img src="hinh/hinh2.jpg" alt="">
+                <div class="giacard">
+                    <del>$150</del>$100
+                </div>
+                <button class="muacard">mua</button>
+            </div>
+        </div>
+        <div class="ndspcard">
+            <div class="spcard">
+                <div class="tenspcard">SP1</div>
+                <img src="hinh/hinh3.jpg" alt="">
+                <div class="giacard">
+                    <del>$150</del>$100
+                </div>
+                <button class="muacard">mua</button>
+            </div>
+        </div>
+        <div class="ndspcard">
+            <div class="spcard">
+                <div class="tenspcard">SP1</div>
+                <img src="hinh/hinh4.jpg" alt="">
+                <div class="giacard">
+                    <del>$150</del>$100
+                </div>
+                <button class="muacard">mua</button>
+            </div>
+        </div>
+        <div class="ndspcard">
+            <div class="spcard">
+                <div class="tenspcard">SP1</div>
+                <img src="hinh/hinh3.jpg" alt="">
+                <div class="giacard">
+                    <del>$150</del>$100
+                </div>
+                <button class="muacard">mua</button>
+            </div>
+        </div>
+    </div>
+    <div class="cach"></div>
+
+    <div class="noidungmh">
+        <div class="tieude">
+            <h3>màn hình</h3>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/mh1.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/mh2.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/mh3.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/mh4.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/mh5.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/mh6.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+    </div>
+    <div class="cach"></div> -->
+
+
+
+    <div class="noidungmh">
+        <div class="tieude">
+            <h3>cây pc build sẵn</h3>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <img src="hinh/cm1.webp" alt="">
+                <p class="tenspmh">sp1</p>
+                <p class="view">giá: <span>18999000</span>đ</p>
+                <button onclick="addcart(this)"><a>đặt hàng</a></button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <img src="hinh/cm2.webp" alt="">
+                <p class="tenspmh">sp2</p>
+                <p class="view">giá: <span>16999000</span>đ</p>
+                <button onclick="addcart(this)"><a>đặt hàng</a></button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <img src="hinh/cm3.webp" alt="">
+                <p class="tenspmh">sp3</p>
+                <p class="view">giá: <span>24599000</span>đ</p>
+                <button onclick="addcart(this)"><a>đặt hàng</a></button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <img src="hinh/cm4.webp" alt="">
+                <p class="tenspmh">sp4</p>
+                <p class="view">giá: <span>27400000</span>đ</p>
+                <button onclick="addcart(this)"><a>đặt hàng</a></button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <img src="hinh/cm5.webp" alt="">
+                <p class="tenspmh">sp5</p>
+                <p class="view">giá: <span>13000000</span>đ</p>
+                <button onclick="addcart(this)"><a>đặt hàng</a></button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <img src="hinh/cm6.webp" alt="">
+                <p class="tenspmh">sp6</p>
+                <p class="view">giá: <span>11000000</span>đ</p>
+                <button onclick="addcart(this)"><a>đặt hàng</a></button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <img src="hinh/cm7.webp" alt="">
+                <p class="tenspmh">sp7</p>
+                <p class="view">giá: <span>13000000</span>đ</p>
+                <button onclick="addcart(this)"><a>đặt hàng</a></button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <img src="hinh/cm8.webp" alt="">
+                <p class="tenspmh">sp8</p>
+                <p class="view">giá: <span>13000000</span>đ</p>
+                <button onclick="addcart(this)"><a>đặt hàng</a></button>
+            </div>
+        </div>
+        <div class="ndspmh">
+            <div class="spmh">
+                <img src="hinh/cm9.webp" alt="">
+                <p class="tenspmh">sp9</p>
+                <p class="view">giá: <span>13000000</span>đ</p>
+                <button onclick="addcart(this)"><a>đặt hàng</a></button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="giohang" id="giohang">
+        <table>
+            <tr>
+                <th>stt</th>
+                <th>hình</th>
+                <th>tên sp</th>
+                <th>đơn giá</th>
+                <th>số lượng</th>
+                <th>thành tiền</th>
+            </tr>
+            <tbody id="mycart">
+
+            </tbody>
+        </table>
+    </div>
+    <!-- <div class="noidungbp">
+        <div class="tieude">
+            <h3>bàn phím</h3>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/bp1.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/bp2.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/bp3.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/bp4.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/bp5.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/bp6.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/bp7.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/bp8.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/bp9.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="noidungc">
+        <div class="tieude">
+            <h3>chuột</h3>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/c1.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/c2.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/c3.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/c4.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/c5.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/c5.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/c6.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/c7.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        <div class="ndspmh">
+            <div class="spmh">
+                <div class="tenspmh">SP1</div>
+                <img src="hinh/c10.webp" alt="">
+                <div class="giamh">
+                    <del>$150</del>$100
+                </div>
+                <button class="muamh">mua</button>
+            </div>
+        </div>
+
+        
+    </div> -->
+    <div class="camon">
+        <p class="tks">cảm ơn đã truy cập trang web</p>
+    </div>
+</body>
+
+</html>

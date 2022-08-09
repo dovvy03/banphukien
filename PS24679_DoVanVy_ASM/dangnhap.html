@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dangnhap.css">
+    <script src="slideshow.js"></script>
+    <script src="dangnhap.js"></script>
+    <title>đăng nhập</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/index.html"><img src="hinh/FPT_Polytechnic.png" alt=""></a>
+            </div>
+
+            <div class="slideshow-button">
+                <div class="slideimg">
+                    <div class="hinhanh">
+                        <img class="hinh" id="hinh" src="hinh/xxxbanner1.webp" alt="">
+                    </div>
+                    <div class="nuttrai">
+                        <button type="button" onclick="back()">
+                            < </button>
+                    </div>
+                    <div class="nutphai">
+                        <button type="button" onclick="next()">></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <nav>
+        <div class="menu">
+            <ul>
+                <li><a href="#">trang chủ</a></li>
+                <li><a href="#">liên hệ</a></li>
+                <li>
+                    <div class="login" id="mycar" onclick="showhide()">
+                        <a href="#">giỏ hàng</a>
+                    </div>
+                </li>
+                <!-- <li><a href="dangnhap.html" target="_blank" rel="noopener noreferrer">đăng nhập</a></li> -->
+                <li><a href="dangki.html" target="_blank" rel="noopener noreferrer">đăng kí</a></li>
+                <li>
+                    <a href="#">khác</a>
+                    <ul class="dropmenu">
+                        <li><a href="#">chuột</a></li>
+                        <li><a href="#">bàn phím</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+
+
+    </nav>
+    
+    <div class="container">
+        <div class="all">
+            <label for="">đăng nhập</label>
+            <p id="ten">
+                <label>tên đăng nhập</label>
+                <input id="tendn" type="text" placeholder="nhập tên đăng nhập"> <br>
+            </p>
+            <p id="pass">
+                <label for="">mật khẩu</label>
+                <input id="mk" type="password" placeholder="nhập mật khẩu">
+                <img src="hinh/eye.jpg" alt="" onclick="hienthi()">
+            </p>
+            <div id="kq"></div>
+            <p>
+                <button type="button" id="button" onclick="kiemtra();">đăng nhập</button>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

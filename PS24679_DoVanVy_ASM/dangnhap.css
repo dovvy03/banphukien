@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    float: left;
+    height: 350px;
+}
+
+header .container {
+    width: 100%;
+    float: left;
+    height: 400px;
+    background-color: rgb(219, 163, 163);
+}
+
+.logo img {
+    width: 25%;
+    float: left;
+    margin: 100px 50px;
+}
+
+.hinhanh img {
+    width: 40%;
+    position: absolute;
+    right: 17rem;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.nutphai button {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 12rem;
+    margin-top: 150px;
+    margin-left: 16rem;
+    font-weight: bold;
+
+}
+
+.nuttrai button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 20rem;
+    margin-top: 150px;
+    margin-left: 16rem;
+    font-weight: bold;
+
+}
+
+
+nav {
+    width: 100%;
+    float: left;
+    height: 100px;
+    background-color: rgb(235, 86, 60);
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.menu ul li {
+    color: white;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-variant: small-caps;
+
+}
+
+.menu ul li a:hover {
+    background: #161212;
+    color: rgb(231, 95, 32);
+}
+
+.menu ul li>.dropmenu {
+    display: none;
+    position: absolute;
+    background-color: blue;
+}
+
+.menu ul li:hover .dropmenu {
+    display: block;
+}
+
+.container{
+    background-color: rgb(156, 93, 34);
+    height:300px;
+    clear: both;
+}
+
+
+.all {
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+label{
+    text-transform: uppercase;
+    font-variant: small-caps;
+    color: white;
+}
+
+.all img{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 78%;
+    right: 40.5%;
+}
+
+#mk{
+    margin-left: 43px;
+}

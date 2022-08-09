@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    float: left;
+    height: 350px;
+}
+
+header .container {
+    width: 100%;
+    float: left;
+    height: 400px;
+    background-color: rgb(219, 163, 163);
+}
+
+.logo img {
+    width: 25%;
+    float: left;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+}
+
+.hinhanh img {
+    width: 40%;
+    position: absolute;
+    right: 18%;
+    top: 7%;
+}
+
+.nutphai button {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 20%;
+    right: 16%;
+    font-weight: bold;
+
+}
+
+.nuttrai button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    font-weight: bold;
+
+}
+
+
+nav {
+    width: 100%;
+    float: left;
+    height: 100px;
+    background-color: rgb(235, 86, 60);
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.menu ul li {
+    color: white;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-variant: small-caps;
+
+}
+
+.menu ul li a:hover {
+    background: #161212;
+    color: rgb(231, 95, 32);
+}
+
+.menu ul li>.dropmenu {
+    display: none;
+    position: absolute;
+    background-color: blue;
+}
+
+.menu ul li:hover .dropmenu {
+    display: block;
+}
+
+.cach {
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    float: left;
+}
+
+.tieude {
+    width: 100%;
+    height: 50px;
+    background-color: tomato;
+}
+
+h3 {
+    color: white;
+    font-size: 40px;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+
+.spmh {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.ndspmh {
+    box-shadow: 20px;
+    float: left;
+    width: 33%;
+    border-radius: 10px;
+
+}
+
+.ndspmh:hover {
+    background-color: rgb(215, 8, 46);
+}
+
+.noidungmh {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.camon {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(117, 79, 30);
+    clear: both;
+}
+
+.tks {
+    font-size: 50px;
+    text-align: center;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+
+.login {
+    color: blanchedalmond;
+    font-weight: bold;
+}
+
+.giohang {
+    display: none;
+    position: absolute;
+    left: 40%;
+    top: 55%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px;
+    z-index: 9999;
+}
+
+.giohang img {
+    height: 100px;
+    width: 100px;
+}
+
+table {
+    width: 100%;
+    background-color: rgb(147, 177, 108);
+}
+
+table,
+th,
+td {
+    border: 1px solid red;
+    color: white;
+}
+
+th,td{
+    background-color: #e65d5d;
+}
+
+.ndspmh img {
+    width: 70%;
+    height: 70%;
+
+}
